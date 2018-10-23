@@ -1,0 +1,2 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:imhh_base/Configuration/TypoScript/division/General_constants.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:imhh_base/Configuration/TypoScript/division/Extensions_constants.ts">

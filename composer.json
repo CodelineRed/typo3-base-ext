@@ -1,0 +1,31 @@
+{
+    "name": "insanitymeetshh/typo3-base-ext",
+    "description": "TYPO3 Base Extension",
+    "version": "1.0.0-dev",
+    "type": "typo3-cms-extension",
+    "homepage": "https://github.com/InsanityMeetsHH/typo3-base-ext",
+    "keywords": ["TYPO3 CMS", "Base Extension"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/InsanityMeetsHH/typo3-base-ext/issues"
+    },
+    "authors": [
+        {
+            "name": "InsanityMeetsHH",
+            "role": "Lead Developer",
+            "email": "software@insanitymeetshh.net"
+        }
+    ],
+    "dist": {
+        "type": "git",
+        "url": "https://github.com/InsanityMeetsHH/typo3-base-ext.git"
+    },
+    "require": {
+        "typo3/cms-core": "^8.7 || ^9.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "IMHH\\Base\\": "Classes"
+        }
+    }
+}

@@ -1,2 +1,43 @@
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:imhh_base/Configuration/TypoScript/division/General_constants.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:imhh_base/Configuration/TypoScript/division/Extensions_constants.ts">
+plugin.tx_typo3_base_ext {
+    view {
+        # cat=plugin.tx_typo3_base_ext/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:typo3_base_ext/Resources/Private/Templates/
+
+        # cat=plugin.tx_typo3_base_ext/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:typo3_base_ext/Resources/Private/Partials/
+
+        # cat=plugin.tx_typo3_base_ext/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:typo3_base_ext/Resources/Private/Layouts/
+    }
+
+    settings {
+        # cat=plugin.tx_typo3_base_ext/general; type=string; label=Title of Website
+        title = 
+
+        # cat=plugin.tx_typo3_base_ext/general; type=string; label=Domain of Website
+        domain = 
+
+        # cat=plugin.tx_typo3_base_ext/general; type=string; label=Keywords of Website
+        keywords = 
+
+        # cat=plugin.tx_typo3_base_ext/general; type=string; label=Description of Website
+        description = 
+
+        # cat=plugin.tx_typo3_base_ext/general; type=string; label=Path to Base Extension
+        base = EXT:typo3_base_ext/
+
+        # cat=plugin.tx_typo3_base_ext/general; type=string; label=Path to folder with CSS, JavaScript, Image, ...
+        files = 
+
+        # cat=plugin.tx_typo3_base_ext/general; type=string; label=PID of news detail page
+        news_detail = 
+
+        # cat=plugin.tx_typo3_base_ext/social; type=string; label=Facebook image
+        facebook_img = 
+
+        # cat=plugin.tx_typo3_base_ext/general; type=string; label=Facebook locale
+        facebook_locale = en_US
+
+        sys_language_uid = 0
+    }
+}

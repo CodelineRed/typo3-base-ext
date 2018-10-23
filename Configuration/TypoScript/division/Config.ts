@@ -1,5 +1,5 @@
 config {
-    baseURL = {$imhh.domain}
+    baseURL = {$plugin.tx_typo3_base_ext.settings.domain}
 
     no_cache = 0
     cache = 1

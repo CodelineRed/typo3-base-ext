@@ -5,19 +5,19 @@ page {
     typeNum = 0
 
     includeCSS {
-        styles = {$imhh.base}/Resources/Public/Css/styles.css
+        styles = {$plugin.tx_typo3_base_ext.settings.base}/Resources/Public/Css/styles.css
     }
 
     includeJSFooter {
-        scripts = {$imhh.base}/Resources/Public/Js/scripts.js
+        scripts = {$plugin.tx_typo3_base_ext.settings.base}/Resources/Public/Js/scripts.js
         scripts.forceOnTop = 1
     }
 
     meta {
-        keywords = {$imhh.keywords}
+        keywords = {$plugin.tx_typo3_base_ext.settings.keywords}
         keywords.override.field = keywords
 
-        description = {$imhh.description}
+        description = {$plugin.tx_typo3_base_ext.settings.description}
         description.override.field  = description
 
         #distribution = Global
@@ -30,7 +30,7 @@ page {
     # den Body die Seiten id mit geben
     bodyTagCObject = TEXT
     bodyTagCObject {
-        dataWrap = <body id="uid_{field:uid}" class="subpage parent_{field:pid} frontend_{field:layout}" data-langid="{$sys_language_uid}">
+        dataWrap = <body id="uid_{field:uid}" class="subpage parent_{field:pid} frontend_{field:layout}" data-langid="{$plugin.tx_typo3_base_ext.settings.sys_language_uid}">
     }
 
     headerData.10 = TEXT
@@ -44,17 +44,17 @@ page {
     headerData.20 = TEXT
     headerData.20 {
         field = title // subtitle
-        noTrimWrap = |<title>| &raquo; {$imhh.title}</title>|
+        noTrimWrap = |<title>| &raquo; {$plugin.tx_typo3_base_ext.settings.title}</title>|
     }
 
     headerData.25 = TEXT
     headerData.25 {
         field = title // subtitle
-        wrap = <meta property="og:locale" content="{$imhh.facebook_locale}" /><meta property="og:title" content="|&nbsp;- {$imhh.title}" />
+        wrap = <meta property="og:locale" content="{$plugin.tx_typo3_base_ext.settings.facebook_locale}" /><meta property="og:title" content="|&nbsp;- {$plugin.tx_typo3_base_ext.settings.title}" />
     }
 
     headerData.30 = TEXT
-    headerData.30.value = {$imhh.facebook_img}
+    headerData.30.value = {$plugin.tx_typo3_base_ext.settings.facebook_img}
     headerData.30.wrap = <link rel="image_src" href="|" />
        
     headerData.35 < page.headerData.30

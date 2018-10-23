@@ -27,7 +27,7 @@ plugin.tx_typo3_base_ext {
         base = EXT:typo3_base_ext/
 
         # cat=plugin.tx_typo3_base_ext/general; type=string; label=Path to folder with CSS, JavaScript, Image, ...
-        files = 
+        files = EXT:typo3_base_ext/Resources/Public/
 
         # cat=plugin.tx_typo3_base_ext/general; type=string; label=PID of news detail page
         news_detail = 

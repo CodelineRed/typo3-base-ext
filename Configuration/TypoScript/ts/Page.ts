@@ -3,15 +3,107 @@
 page = PAGE
 page {
     typeNum = 0
+    10 = FLUIDTEMPLATE
+    10 {
+        file.cObject = CASE
+        file.cObject {
+            key.field = backend_layout
+            key.ifEmpty.data = levelfield:-1,backend_layout_next_level,slide
+            #key.override.field = backend_layout
+
+            default = TEXT
+            default.value = EXT:typo3_base_ext/Resources/Private/Templates/Layout_01.html
+
+            pagets__bl1 = TEXT
+            pagets__bl1.value = EXT:typo3_base_ext/Resources/Private/Templates/Layout_01.html
+
+            pagets__bl2 = TEXT
+            pagets__bl2.value = EXT:typo3_base_ext/Resources/Private/Templates/Layout_02.html
+
+            pagets__bl3 = TEXT
+            pagets__bl3.value = EXT:typo3_base_ext/Resources/Private/Templates/Layout_03.html
+
+            pagets__bl4 = TEXT
+            pagets__bl4.value = EXT:typo3_base_ext/Resources/Private/Templates/Layout_04.html
+
+            pagets__bl5 = TEXT
+            pagets__bl5.value = EXT:typo3_base_ext/Resources/Private/Templates/Layout_05.html
+
+            pagets__bl6 = TEXT
+            pagets__bl6.value = EXT:typo3_base_ext/Resources/Private/Templates/Layout_06.html
+        }
+
+        templateRootPaths.0 = {$plugin.tx_typo3_base_ext.view.templateRootPath}
+        layoutRootPaths.0 = {$plugin.tx_typo3_base_ext.view.layoutRootPath}
+        partialRootPaths.0 = {$plugin.tx_typo3_base_ext.view.partialRootPath}
+
+        variables {
+            content0 < styles.content.get
+            content0.select.where = colPos=0
+            content0.select.includeRecordsWithoutDefaultTranslation = 1
+
+            content1 < .content0
+            content1.select.where = colPos=1
+
+            content2 < .content0
+            content2.select.where = colPos=2
+
+            content3 < .content0
+            content3.select.where = colPos=3
+
+            content4 < .content0
+            content4.select.where = colPos=4
+
+            content5 < .content0
+            content5.select.where = colPos=5
+
+            content6 < .content0
+            content6.select.where = colPos=6
+
+            content7 < .content0
+            content7.select.where = colPos=7
+
+            content8 < .content0
+            content8.select.where = colPos=8
+
+            content9 < .content0
+            content9.select.where = colPos=9
+
+            content10 < .content0
+            content10.select.where = colPos=10
+
+            currentLang = TEXT
+            currentLang.value = {$sys_language_uid}
+
+            navigation < lib.navigation
+            breadcrumb < lib.breadcrumb
+            footer < lib.footer
+            langswitch < lib.langswitch
+        }
+
+        settings {
+            title = {$plugin.tx_typo3_base_ext.settings.title}
+            domain = {$plugin.tx_typo3_base_ext.settings.domain}
+            keywords = {$plugin.tx_typo3_base_ext.settings.keywords}
+            description = {$plugin.tx_typo3_base_ext.settings.title}
+            base = {$plugin.tx_typo3_base_ext.settings.base}
+            news_detail = {$plugin.tx_typo3_base_ext.settings.news_detail}
+            facebook_img = {$plugin.tx_typo3_base_ext.settings.facebook_img}
+            facebook_locale = {$plugin.tx_typo3_base_ext.settings.facebook_locale}
+        }
+    }
 
     includeCSS {
-        styles = {$plugin.tx_typo3_base_ext.settings.base}/Resources/Public/Css/styles.css
+        flexslider2 >
+        styles = {$plugin.tx_typo3_base_ext.settings.files}Css/styles.css
     }
 
     includeJSFooter {
-        scripts = {$plugin.tx_typo3_base_ext.settings.base}/Resources/Public/Js/scripts.js
+        scripts = {$plugin.tx_typo3_base_ext.settings.files}Js/scripts.js
         scripts.forceOnTop = 1
     }
+
+    includeJSFooterlibs.flexslider2 >
 
     meta {
         keywords = {$plugin.tx_typo3_base_ext.settings.keywords}

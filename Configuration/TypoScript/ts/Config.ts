@@ -1,7 +1,7 @@
 config {
     baseURL = {$plugin.tx_typo3_base_ext.settings.domain}
 
-    no_cache = 0
+    no_cache = 1
     cache = 1
 
     removeDefaultJS = 0
@@ -27,7 +27,8 @@ config {
     #noPageTitle = 1
 
     linkVars = L
-    sys_language_mode = content_fallback
+    sys_language_mode = strict
+    #sys_language_mode = content_fallback
     sys_language_overlay = hideNonTranslated
 
     spamProtectEmailAddresses = 2
@@ -35,28 +36,25 @@ config {
 }
 
 # ======================================================================
-# German
+# Default
 # ======================================================================
 
 config {
     sys_language_uid = 0
-    language = de
-    locale_all = de
-    htmlTag_langKey = de
+    language = en
+    locale_all = en_US.utf8
+    htmlTag_langKey = en_US
 }
 
 # ======================================================================
-# English
+# German
 # ======================================================================
 [globalVar = GP:L = 1]
     config {
         sys_language_uid = 1
-        language = en
-        locale_all = en
-        htmlTag_langKey = en
+        language = de
+        locale_all = de_DE.utf8
+        htmlTag_langKey = de-DE
     }
 [global]
-
-
-config.sys_language_mode = strict
 

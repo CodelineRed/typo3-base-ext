@@ -1,8 +1,53 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2018-10-22T18:00:00Z" product-name="imhh_base">
+    <file source-language="en" datatype="plaintext" original="messages" date="2018-10-22T18:00:00Z" product-name="typo3_base_ext">
         <header/>
         <body>
+            <trans-unit id="bl.01" xml:space="preserve">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="bl.02" xml:space="preserve">
+                <source>Head with Content left and Sidebar right</source>
+            </trans-unit>
+            <trans-unit id="bl.03" xml:space="preserve">
+                <source>Head with Sidebar left and Content right</source>
+            </trans-unit>
+            <trans-unit id="bl.04" xml:space="preserve">
+                <source>Content left and Sidebar right</source>
+            </trans-unit>
+            <trans-unit id="bl.05" xml:space="preserve">
+                <source>Sidebar left and Content right</source>
+            </trans-unit>
+            <trans-unit id="bl.06" xml:space="preserve">
+                <source>Head with Content</source>
+            </trans-unit>
+            <trans-unit id="bl.07" xml:space="preserve">
+                <source>Homepage</source>
+            </trans-unit>
+            <trans-unit id="bl.content" xml:space="preserve">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="bl.content_left" xml:space="preserve">
+                <source>Content (left)</source>
+            </trans-unit>
+            <trans-unit id="bl.content_right" xml:space="preserve">
+                <source>Content (right)</source>
+            </trans-unit>
+            <trans-unit id="bl.sidebar" xml:space="preserve">
+                <source>Sidebar</source>
+            </trans-unit>
+            <trans-unit id="bl.sidebar_left" xml:space="preserve">
+                <source>Sidebar (left)</source>
+            </trans-unit>
+            <trans-unit id="bl.sidebar_right" xml:space="preserve">
+                <source>Sidebar (right)</source>
+            </trans-unit>
+            <trans-unit id="bl.head" xml:space="preserve">
+                <source>Head</source>
+            </trans-unit>
+            <trans-unit id="bl.head_top" xml:space="preserve">
+                <source>Head (top)</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

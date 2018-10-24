@@ -1,5 +1,5 @@
 # display language flag
 mod.SHARED {
-   defaultLanguageFlag = us
+   defaultLanguageFlag = gb
    defaultLanguageLabel = English
 }

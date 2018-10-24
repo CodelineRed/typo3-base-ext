@@ -2,22 +2,22 @@
     document.body.className = document.body.className.replace('no-js', '');
 </script>
 
-<header>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                Header
-            </div>
+<header class="container">
+    <div class="row">
+        <div class="col-12">
+            <f:format.raw>{navigation}</f:format.raw>
         </div>
     </div>
 </header>
 
+<!--TYPO3SEARCH_begin-->
 <f:render section="content" />
+<!--TYPO3SEARCH_end-->
 
-<footer>
-    <div class="container">
-        <div class="row">
-            <f:format.html>{footer}</f:format.html>
+<footer class="container">
+    <div class="row">
+        <div class="col">
+            <f:format.raw>{footer}</f:format.raw>
         </div>
     </div>
 </footer>

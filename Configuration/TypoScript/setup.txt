@@ -3,6 +3,10 @@
 # ======================================================================
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3_base_ext/Configuration/TypoScript/ts/Config.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3_base_ext/Configuration/TypoScript/ts/Canonical.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3_base_ext/Configuration/TypoScript/ts/Menu.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3_base_ext/Configuration/TypoScript/ts/Search.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3_base_ext/Configuration/TypoScript/ts/Langswitch.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3_base_ext/Configuration/TypoScript/ts/Navigation.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3_base_ext/Configuration/TypoScript/ts/Footer.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3_base_ext/Configuration/TypoScript/ts/Breadcrumb.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3_base_ext/Configuration/TypoScript/ts/Page.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3_base_ext/Configuration/TypoScript/ts/Extensions.ts">

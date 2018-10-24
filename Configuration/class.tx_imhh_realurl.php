@@ -51,8 +51,7 @@ class tx_imhh_realurl {
                         ),
                     ),
                  ),
-//                 1 => 'article',
-//                 2 => 'article'
+//                 1 => 'article', # key = page id - value = name of fixedPostVars
             ),
             'preVars' => array(
                 array(
@@ -68,7 +67,7 @@ class tx_imhh_realurl {
                         #'en' => '0',
                         'de' => '1',
                     ),
-                    'valueDefault' => 'de',
+                    'valueDefault' => 'en',
                     'noMatch' => 'bypass',
                 ),
                 array(

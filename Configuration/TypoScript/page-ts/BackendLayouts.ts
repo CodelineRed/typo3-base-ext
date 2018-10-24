@@ -1,7 +1,7 @@
 mod.web_layout.BackendLayouts {
     bl1 {
-        title = Content
-        icon = EXT:typo3_base_ext/Resources/Public/Images/BackendLayouts/default.gif
+        title = LLL:EXT:typo3_base_ext/Resources/Private/Language/locallang.xlf:bl.01
+        icon = EXT:typo3_base_ext/Resources/Public/BackendLayouts/01.gif
         config {
             backend_layout {
                 colCount = 1
@@ -10,7 +10,7 @@ mod.web_layout.BackendLayouts {
                     1 {
                         columns {
                             1 {
-                                name = Content
+                                name = LLL:EXT:typo3_base_ext/Resources/Private/Language/locallang.xlf:bl.content
                                 colPos = 0
                             }
                         }
@@ -20,8 +20,8 @@ mod.web_layout.BackendLayouts {
         }
     }
     bl2 {
-        title = Head with Content left and Sidebar right
-        icon = EXT:typo3_base_ext/Resources/Public/Images/BackendLayouts/default.gif
+        title = LLL:EXT:typo3_base_ext/Resources/Private/Language/locallang.xlf:bl.02
+        icon = EXT:typo3_base_ext/Resources/Public/BackendLayouts/02.gif
         config {
             backend_layout {
                 rowCount = 2
@@ -30,7 +30,7 @@ mod.web_layout.BackendLayouts {
                     1 {
                         columns {
                             1 {
-                                name = Head
+                                name = LLL:EXT:typo3_base_ext/Resources/Private/Language/locallang.xlf:bl.head_top
                                 colPos = 2
                                 colspan = 4
                             }
@@ -39,12 +39,12 @@ mod.web_layout.BackendLayouts {
                     2 {
                         columns {
                             1 {
-                                name = Content
+                                name = LLL:EXT:typo3_base_ext/Resources/Private/Language/locallang.xlf:bl.content_left
                                 colPos = 0
                                 colspan = 3
                             }
                             2 {
-                                name = Sidebar
+                                name = LLL:EXT:typo3_base_ext/Resources/Private/Language/locallang.xlf:bl.sidebar_right
                                 colPos = 1
                                 colspan = 1
                             }
@@ -55,8 +55,8 @@ mod.web_layout.BackendLayouts {
         }
     }
     bl3 {
-        title = Head with Sidebar left and Content right
-        icon = EXT:typo3_base_ext/Resources/Public/Images/BackendLayouts/default.gif
+        title = LLL:EXT:typo3_base_ext/Resources/Private/Language/locallang.xlf:bl.03
+        icon = EXT:typo3_base_ext/Resources/Public/BackendLayouts/03.gif
         config {
             backend_layout {
                 rowCount = 2
@@ -65,7 +65,7 @@ mod.web_layout.BackendLayouts {
                     1 {
                         columns {
                             1 {
-                                name = Head
+                                name = LLL:EXT:typo3_base_ext/Resources/Private/Language/locallang.xlf:bl.head_top
                                 colPos = 2
                                 colspan = 4
                             }
@@ -74,12 +74,12 @@ mod.web_layout.BackendLayouts {
                     2 {
                         columns {
                             1 {
-                                name = Sidebar
+                                name = LLL:EXT:typo3_base_ext/Resources/Private/Language/locallang.xlf:bl.sidebar_right
                                 colPos = 1
                                 colspan = 1
                             }
                             2 {
-                                name = Content
+                                name = LLL:EXT:typo3_base_ext/Resources/Private/Language/locallang.xlf:bl.content_right
                                 colPos = 0
                                 colspan = 3
                             }
@@ -90,8 +90,8 @@ mod.web_layout.BackendLayouts {
         }
     }
     bl4 {
-        title = Content left and Sidebar right
-        icon = EXT:typo3_base_ext/Resources/Public/Images/BackendLayouts/default.gif
+        title = LLL:EXT:typo3_base_ext/Resources/Private/Language/locallang.xlf:bl.04
+        icon = EXT:typo3_base_ext/Resources/Public/BackendLayouts/04.gif
         config {
             backend_layout {
                 rowCount = 1
@@ -100,12 +100,12 @@ mod.web_layout.BackendLayouts {
                     1 {
                         columns {
                             1 {
-                                name = Content
+                                name = LLL:EXT:typo3_base_ext/Resources/Private/Language/locallang.xlf:bl.content_left
                                 colPos = 0
                                 colspan = 3
                             }
                             2 {
-                                name = Sidebar
+                                name = LLL:EXT:typo3_base_ext/Resources/Private/Language/locallang.xlf:bl.sidebar_right
                                 colPos = 1
                                 colspan = 1
                             }
@@ -116,8 +116,8 @@ mod.web_layout.BackendLayouts {
         }
     }
     bl5 {
-        title = Sidebar left and Content right
-        icon = EXT:typo3_base_ext/Resources/Public/Images/BackendLayouts/default.gif
+        title = LLL:EXT:typo3_base_ext/Resources/Private/Language/locallang.xlf:bl.05
+        icon = EXT:typo3_base_ext/Resources/Public/BackendLayouts/05.gif
         config {
             backend_layout {
                 rowCount = 1
@@ -126,12 +126,12 @@ mod.web_layout.BackendLayouts {
                     1 {
                         columns {
                             1 {
-                                name = Sidebar
+                                name = LLL:EXT:typo3_base_ext/Resources/Private/Language/locallang.xlf:bl.sidebar_left
                                 colPos = 1
                                 colspan = 1
                             }
                             2 {
-                                name = Content
+                                name = LLL:EXT:typo3_base_ext/Resources/Private/Language/locallang.xlf:bl.content_right
                                 colPos = 0
                                 colspan = 3
                             }
@@ -142,8 +142,8 @@ mod.web_layout.BackendLayouts {
         }
     }
     bl6 {
-        title = Head with Content
-        icon = EXT:typo3_base_ext/Resources/Public/Images/BackendLayouts/default.gif
+        title = LLL:EXT:typo3_base_ext/Resources/Private/Language/locallang.xlf:bl.06
+        icon = EXT:typo3_base_ext/Resources/Public/BackendLayouts/06.gif
         config {
             backend_layout {
                 colCount = 1
@@ -152,7 +152,7 @@ mod.web_layout.BackendLayouts {
                     1 {
                         columns {
                             1 {
-                                name = Head
+                                name = LLL:EXT:typo3_base_ext/Resources/Private/Language/locallang.xlf:bl.head
                                 colPos = 2
                             }
                         }
@@ -160,7 +160,27 @@ mod.web_layout.BackendLayouts {
                     2 {
                         columns {
                             1 {
-                                name = Content
+                                name = LLL:EXT:typo3_base_ext/Resources/Private/Language/locallang.xlf:bl.content
+                                colPos = 0
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    bl7 {
+        title = LLL:EXT:typo3_base_ext/Resources/Private/Language/locallang.xlf:bl.07
+        icon = EXT:typo3_base_ext/Resources/Public/BackendLayouts/07.gif
+        config {
+            backend_layout {
+                colCount = 1
+                rowCount = 1
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = LLL:EXT:typo3_base_ext/Resources/Private/Language/locallang.xlf:bl.content
                                 colPos = 0
                             }
                         }

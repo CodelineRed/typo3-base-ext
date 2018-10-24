@@ -31,6 +31,9 @@ page {
 
             pagets__bl6 = TEXT
             pagets__bl6.value = EXT:typo3_base_ext/Resources/Private/Templates/Layout_06.html
+
+            pagets__bl7 = TEXT
+            pagets__bl7.value = EXT:typo3_base_ext/Resources/Private/Templates/Layout_07.html
         }
 
         templateRootPaths.0 = {$plugin.tx_typo3_base_ext.view.templateRootPath}
@@ -71,9 +74,6 @@ page {
 
             content10 < .content0
             content10.select.where = colPos=10
-
-            currentLang = TEXT
-            currentLang.value = {$sys_language_uid}
 
             navigation < lib.navigation
             breadcrumb < lib.breadcrumb
@@ -122,7 +122,7 @@ page {
     # den Body die Seiten id mit geben
     bodyTagCObject = TEXT
     bodyTagCObject {
-        dataWrap = <body id="uid_{field:uid}" class="subpage parent_{field:pid} frontend_{field:layout}" data-langid="{$plugin.tx_typo3_base_ext.settings.sys_language_uid}">
+        dataWrap = <body id="page-{field:uid}" class="subpage parent-{field:pid} frontend-{field:layout}" data-langid="{GP:L}">
     }
 
     headerData.10 = TEXT

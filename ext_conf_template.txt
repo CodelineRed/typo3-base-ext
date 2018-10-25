@@ -1,0 +1,5 @@
+# cat=basic/enable; type=boolean; label=Login style:Enable or disable custom login style.
+loginStyle = 1
+
+# cat=basic/enable; type=boolean; label=Backend style:Enable or disable custom backend style.
+backendStyle = 1

@@ -12,33 +12,33 @@ page {
             #key.override.field = backend_layout
 
             default = TEXT
-            default.value = EXT:typo3_base_ext/Resources/Private/Templates/Layout_01.html
+            default.value = EXT:imhh_t3base/Resources/Private/Templates/Layout_01.html
 
             pagets__bl1 = TEXT
-            pagets__bl1.value = EXT:typo3_base_ext/Resources/Private/Templates/Layout_01.html
+            pagets__bl1.value = EXT:imhh_t3base/Resources/Private/Templates/Layout_01.html
 
             pagets__bl2 = TEXT
-            pagets__bl2.value = EXT:typo3_base_ext/Resources/Private/Templates/Layout_02.html
+            pagets__bl2.value = EXT:imhh_t3base/Resources/Private/Templates/Layout_02.html
 
             pagets__bl3 = TEXT
-            pagets__bl3.value = EXT:typo3_base_ext/Resources/Private/Templates/Layout_03.html
+            pagets__bl3.value = EXT:imhh_t3base/Resources/Private/Templates/Layout_03.html
 
             pagets__bl4 = TEXT
-            pagets__bl4.value = EXT:typo3_base_ext/Resources/Private/Templates/Layout_04.html
+            pagets__bl4.value = EXT:imhh_t3base/Resources/Private/Templates/Layout_04.html
 
             pagets__bl5 = TEXT
-            pagets__bl5.value = EXT:typo3_base_ext/Resources/Private/Templates/Layout_05.html
+            pagets__bl5.value = EXT:imhh_t3base/Resources/Private/Templates/Layout_05.html
 
             pagets__bl6 = TEXT
-            pagets__bl6.value = EXT:typo3_base_ext/Resources/Private/Templates/Layout_06.html
+            pagets__bl6.value = EXT:imhh_t3base/Resources/Private/Templates/Layout_06.html
 
             pagets__bl7 = TEXT
-            pagets__bl7.value = EXT:typo3_base_ext/Resources/Private/Templates/Layout_07.html
+            pagets__bl7.value = EXT:imhh_t3base/Resources/Private/Templates/Layout_07.html
         }
 
-        templateRootPaths.0 = {$plugin.tx_typo3_base_ext.view.templateRootPath}
-        layoutRootPaths.0 = {$plugin.tx_typo3_base_ext.view.layoutRootPath}
-        partialRootPaths.0 = {$plugin.tx_typo3_base_ext.view.partialRootPath}
+        templateRootPaths.0 = {$plugin.tx_imhh_t3base.view.templateRootPath}
+        layoutRootPaths.0 = {$plugin.tx_imhh_t3base.view.layoutRootPath}
+        partialRootPaths.0 = {$plugin.tx_imhh_t3base.view.partialRootPath}
 
         variables {
             content0 < styles.content.get
@@ -77,39 +77,39 @@ page {
 
             navigation < lib.navigation
             breadcrumb < lib.breadcrumb
-            footer < lib.footer
             langswitch < lib.langswitch
+            footer < lib.footer
         }
 
         settings {
-            title = {$plugin.tx_typo3_base_ext.settings.title}
-            domain = {$plugin.tx_typo3_base_ext.settings.domain}
-            keywords = {$plugin.tx_typo3_base_ext.settings.keywords}
-            description = {$plugin.tx_typo3_base_ext.settings.title}
-            base = {$plugin.tx_typo3_base_ext.settings.base}
-            news_detail = {$plugin.tx_typo3_base_ext.settings.news_detail}
-            facebook_img = {$plugin.tx_typo3_base_ext.settings.facebook_img}
-            facebook_locale = {$plugin.tx_typo3_base_ext.settings.facebook_locale}
+            title = {$plugin.tx_imhh_t3base.settings.title}
+            domain = {$plugin.tx_imhh_t3base.settings.domain}
+            keywords = {$plugin.tx_imhh_t3base.settings.keywords}
+            description = {$plugin.tx_imhh_t3base.settings.title}
+            base = {$plugin.tx_imhh_t3base.settings.base}
+            news_detail = {$plugin.tx_imhh_t3base.settings.news_detail}
+            facebook_img = {$plugin.tx_imhh_t3base.settings.facebook_img}
+            facebook_locale = {$plugin.tx_imhh_t3base.settings.facebook_locale}
         }
     }
 
     includeCSS {
         flexslider2 >
-        styles = {$plugin.tx_typo3_base_ext.settings.files}Css/styles.css
+        styles = {$plugin.tx_imhh_t3base.settings.files}Css/styles.css
     }
 
     includeJSFooter {
-        scripts = {$plugin.tx_typo3_base_ext.settings.files}Js/scripts.js
+        scripts = {$plugin.tx_imhh_t3base.settings.files}Js/scripts.js
         scripts.forceOnTop = 1
     }
 
     includeJSFooterlibs.flexslider2 >
 
     meta {
-        keywords = {$plugin.tx_typo3_base_ext.settings.keywords}
+        keywords = {$plugin.tx_imhh_t3base.settings.keywords}
         keywords.override.field = keywords
 
-        description = {$plugin.tx_typo3_base_ext.settings.description}
+        description = {$plugin.tx_imhh_t3base.settings.description}
         description.override.field  = description
 
         #distribution = Global
@@ -136,17 +136,17 @@ page {
     headerData.20 = TEXT
     headerData.20 {
         field = title // subtitle
-        noTrimWrap = |<title>| &raquo; {$plugin.tx_typo3_base_ext.settings.title}</title>|
+        noTrimWrap = |<title>| &raquo; {$plugin.tx_imhh_t3base.settings.title}</title>|
     }
 
     headerData.25 = TEXT
     headerData.25 {
         field = title // subtitle
-        wrap = <meta property="og:locale" content="{$plugin.tx_typo3_base_ext.settings.facebook_locale}" /><meta property="og:title" content="|&nbsp;- {$plugin.tx_typo3_base_ext.settings.title}" />
+        wrap = <meta property="og:locale" content="{$plugin.tx_imhh_t3base.settings.facebook_locale}" /><meta property="og:title" content="|&nbsp;- {$plugin.tx_imhh_t3base.settings.title}" />
     }
 
     headerData.30 = TEXT
-    headerData.30.value = {$plugin.tx_typo3_base_ext.settings.facebook_img}
+    headerData.30.value = {$plugin.tx_imhh_t3base.settings.facebook_img}
     headerData.30.wrap = <link rel="image_src" href="|" />
        
     headerData.35 < page.headerData.30

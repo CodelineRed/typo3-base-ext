@@ -2,7 +2,7 @@ lib.navigation_ul = HMENU
 lib.navigation_ul {
     wrap = |
     special = directory
-    special.value = {$plugin.tx_typo3_base_ext.settings.main_navigation}
+    special.value = {$plugin.tx_imhh_t3base.settings.main_navigation}
 
     1 = TMENU
     1 {
@@ -100,7 +100,7 @@ lib.navigation {
     wrap = <nav class="navbar navbar-expand-lg navbar-dark bg-dark my-3">|</div></nav>
 
     5 = TEXT
-    5.value = <a class="navbar-brand" href="#">{$plugin.tx_typo3_base_ext.settings.title}</a>
+    5.value = <a class="navbar-brand" href="#">{$plugin.tx_imhh_t3base.settings.title}</a>
     5.stdWrap.insertData = 0
 
     10 = TEXT

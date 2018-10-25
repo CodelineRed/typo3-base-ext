@@ -1,7 +1,7 @@
 lib.breadcrumb = HMENU
 lib.breadcrumb {
     special = rootline
-    special.range = {$plugin.tx_typo3_base_ext.settings.breadcrumb_navigation}
+    special.range = {$plugin.tx_imhh_t3base.settings.breadcrumb_navigation}
     wrap = <nav aria-label="breadcrumb"><ol class="breadcrumb">|</ol></nav>
 
     1 = TMENU

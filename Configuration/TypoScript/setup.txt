@@ -1,12 +1,12 @@
 # ======================================================================
-# Include TS files
+# Include setup files
 # ======================================================================
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3_base_ext/Configuration/TypoScript/ts/Config.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3_base_ext/Configuration/TypoScript/ts/Canonical.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3_base_ext/Configuration/TypoScript/ts/Search.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3_base_ext/Configuration/TypoScript/ts/Langswitch.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3_base_ext/Configuration/TypoScript/ts/Navigation.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3_base_ext/Configuration/TypoScript/ts/Footer.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3_base_ext/Configuration/TypoScript/ts/Breadcrumb.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3_base_ext/Configuration/TypoScript/ts/Page.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3_base_ext/Configuration/TypoScript/ts/Extensions.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:imhh_t3base/Configuration/TypoScript/setup/Config.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:imhh_t3base/Configuration/TypoScript/setup/Canonical.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:imhh_t3base/Configuration/TypoScript/setup/Search.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:imhh_t3base/Configuration/TypoScript/setup/Langswitch.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:imhh_t3base/Configuration/TypoScript/setup/Navigation.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:imhh_t3base/Configuration/TypoScript/setup/Footer.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:imhh_t3base/Configuration/TypoScript/setup/Breadcrumb.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:imhh_t3base/Configuration/TypoScript/setup/Page.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:imhh_t3base/Configuration/TypoScript/setup/Extensions.ts">

@@ -1,56 +1,7 @@
-plugin.tx_typo3_base_ext {
-    view {
-        # cat=plugin.tx_typo3_base_ext/file; type=string; label=Path to template root (FE)
-        templateRootPath = EXT:typo3_base_ext/Resources/Private/Templates/
-
-        # cat=plugin.tx_typo3_base_ext/file; type=string; label=Path to template partials (FE)
-        partialRootPath = EXT:typo3_base_ext/Resources/Private/Partials/
-
-        # cat=plugin.tx_typo3_base_ext/file; type=string; label=Path to template layouts (FE)
-        layoutRootPath = EXT:typo3_base_ext/Resources/Private/Layouts/
-    }
-
-    settings {
-        # cat=plugin.tx_typo3_base_ext/general/01; type=string; label=Title of Website
-        title = 
-
-        # cat=plugin.tx_typo3_base_ext/general/02; type=string; label=Domain of Website
-        domain = 
-
-        # cat=plugin.tx_typo3_base_ext/general/03; type=string; label=Keywords of Website
-        keywords = 
-
-        # cat=plugin.tx_typo3_base_ext/general/04; type=string; label=Description of Website
-        description = 
-
-        # cat=plugin.tx_typo3_base_ext/general/05; type=string; label=Path to Base Extension
-        base = EXT:typo3_base_ext/
-
-        # cat=plugin.tx_typo3_base_ext/general/06; type=string; label=Path to folder with CSS, JavaScript, Image, ...
-        files = EXT:typo3_base_ext/Resources/Public/
-
-        # cat=plugin.tx_typo3_base_ext/general/07; type=string; label=PID of news detail page
-        news_detail = 
-
-        # cat=plugin.tx_typo3_base_ext/general/08; type=string; label=PID of main navigation
-        main_navigation = 
-
-        # cat=plugin.tx_typo3_base_ext/general/09; type=string; label=PID of footer navigation
-        footer_navigation = 
-
-        # cat=plugin.tx_typo3_base_ext/general/10; type=string; label=Range of breadcrumb navigation
-        breadcrumb_navigation = 0|-1
-
-        # cat=plugin.tx_typo3_base_ext/general/11; type=string; label=IDs of active translations
-        langswitch_navigation = 0,1
-
-        # cat=plugin.tx_typo3_base_ext/general/10; type=string; label=Langswitch labels
-        langswitch_label = English || Deutsch
-
-        # cat=plugin.tx_typo3_base_ext/general/30; type=string; label=Facebook image
-        facebook_img = 
-
-        # cat=plugin.tx_typo3_base_ext/general/31; type=string; label=Facebook locale
-        facebook_locale = en_US
-    }
-}
+# ======================================================================
+# Include constants files
+# ======================================================================
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:imhh_t3base/Configuration/TypoScript/constants/ImhhBase.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:imhh_t3base/Configuration/TypoScript/constants/IndexedSearch.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:imhh_t3base/Configuration/TypoScript/constants/SourceOpt.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:imhh_t3base/Configuration/TypoScript/constants/Styles.ts">

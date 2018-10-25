@@ -8,7 +8,7 @@ lib.langswitch {
         <div class="dropdown-menu">|</div>
     )
     special = language
-    special.value = {$plugin.tx_typo3_base_ext.settings.langswitch_navigation}
+    special.value = {$plugin.tx_imhh_t3base.settings.langswitch_navigation}
 
     1 = TMENU
     1 {
@@ -18,7 +18,7 @@ lib.langswitch {
         NO {
             stdWrap.cObject = TEXT
             stdWrap.cObject {
-                value =  {$plugin.tx_typo3_base_ext.settings.langswitch_label}
+                value =  {$plugin.tx_imhh_t3base.settings.langswitch_label}
             }
             ATagParams = class="dropdown-item first" |*| class="dropdown-item" |*| class="dropdown-item last"
             allWrap = |

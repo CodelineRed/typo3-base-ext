@@ -1,0 +1,12 @@
+.search-result {
+    &.card-columns {
+        @include media-breakpoint-up(sm) {
+            column-count: 2;
+        }
+        @include media-breakpoint-up(xl) {
+            column-count: 3;
+        }
+    }
+}
+
+

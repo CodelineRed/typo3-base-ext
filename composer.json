@@ -21,11 +21,11 @@
         "url": "https://github.com/InsanityMeetsHH/typo3-base-ext.git"
     },
     "require": {
-        "typo3/cms-core": "^8.7 || ^9.4"
+        "typo3/cms-core": "^8.7 || ^9.5"
     },
     "autoload": {
         "psr-4": {
-            "IMHH\\Base\\": "Classes"
+            "InsanityMeetsHH\\Base\\": "Classes"
         }
     }
 }

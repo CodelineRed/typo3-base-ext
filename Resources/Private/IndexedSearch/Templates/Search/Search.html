@@ -1,4 +1,4 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:is="http://typo3.org/ns/TYPO3/CMS/IndexedSearch/ViewHelpers" data-namespace-typo3-fluid="true">
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:is="http://typo3.org/ns/TYPO3/CMS/IndexedSearch/ViewHelpers" xmlns:t3base="http://typo3.org/ns/InsanityMeetsHH/Base/ViewHelpers" data-namespace-typo3-fluid="true">
     <f:if condition="{settings.navigation} == 1">
         <f:then>
             <f:render partial="NavigationForm" arguments="{_all}" />
@@ -15,10 +15,10 @@
                 <f:for each="{searchWords}" as="searchWord" key="key">
                     <f:if condition="{key} > 0">
                         <f:then>
-                            <f:translate key="searchFor.{searchWord.oper}" />&nbsp;{searchWord.sword}
+                            <f:translate key="searchFor.{searchWord.oper}" />&nbsp;<b>{searchWord.sword}</b>
                         </f:then>
                         <f:else>
-                            <f:translate key="searchFor" />&nbsp;{searchWord.sword}
+                            <f:translate key="searchFor" />&nbsp;<b>{searchWord.sword}</b>
                         </f:else>
                     </f:if>
                 </f:for>
@@ -52,22 +52,24 @@
                                     </table>
                                 </div>
                             </f:if>
-                            <is:pageBrowsing maximumNumberOfResultPages="{settings.page_links}" numberOfResults="{result.count}" currentPage="{searchParams.pointer}" resultsPerPage="{searchParams.numberOfResults}" />
+                            <t3base:pageBrowsing maximumNumberOfResultPages="{settings.page_links}" numberOfResults="{result.count}" currentPage="{searchParams.pointer}" resultsPerPage="{searchParams.numberOfResults}" />
                         </div>
-                        <f:for each="{result.rows}" as="row">
-                            <f:if condition="{row.isSectionHeader}">
-                                <f:then>
-                                <div id="anchor_{row.sectionId}" class="tx-indexedsearch-sectionhead">
-                                    <h2 class="tx-indexedsearch-title"><f:format.html>{row.sectionTitle}</f:format.html> <span class="tx-indexedsearch-result-count">{row.numResultRows} <f:translate key="{f:if(condition: '{row.numResultRows} > 1', then: 'result.pages', else: 'result.page')}" /></span></h2>
-                                </div>
-                                </f:then>
-                                <f:else>
-                                    <f:render partial="Searchresult" arguments="{row: row}" />
-                                </f:else>
-                            </f:if>
-                        </f:for>
+                        <div class="card-columns search-result">
+                            <f:for each="{result.rows}" as="row"  iteration="iterator">
+                                <f:if condition="{row.isSectionHeader}">
+                                    <f:then>
+                                    <div id="anchor_{row.sectionId}" class="tx-indexedsearch-sectionhead">
+                                        <h2 class="tx-indexedsearch-title"><f:format.html>{row.sectionTitle}</f:format.html> <span class="tx-indexedsearch-result-count">{row.numResultRows} <f:translate key="{f:if(condition: '{row.numResultRows} > 1', then: 'result.pages', else: 'result.page')}" /></span></h2>
+                                    </div>
+                                    </f:then>
+                                    <f:else>
+                                        <f:render partial="Searchresult" arguments="{row: row, iterator: iterator}" />
+                                    </f:else>
+                                </f:if>
+                            </f:for>
+                        </div>
                         <div class="tx-indexedsearch-browsebox">
-                            <is:pageBrowsing numberOfResults="{result.count}" maximumNumberOfResultPages="{settings.page_links}" currentPage="{searchParams.pointer}" resultsPerPage="{searchParams.numberOfResults}" />
+                            <t3base:pageBrowsing numberOfResults="{result.count}" maximumNumberOfResultPages="{settings.page_links}" currentPage="{searchParams.pointer}" resultsPerPage="{searchParams.numberOfResults}" />
                         </div>
                     </f:then>
                     <f:else>

@@ -15,11 +15,9 @@
             <f:form.hidden name="search[numberOfResults]" value="{searchParams.numberOfResults}" />
             <f:form.hidden name="search[extendedSearch]" value="{searchParams.extendedSearch}" />
         </div>
-        <fieldset>
-            <div class="tx-indexedsearch-form">
-                <f:form.textfield name="search[sword]" value="{sword}" class="form-control mr-sm-2" placeholder="Search" />
-                <f:form.button type="submit" name="search[submitButton]" value="buttonValue" class="btn btn-outline-light my-2 my-sm-0"><i class="fas fa-search"></i></f:form.button>
-            </div>
-        </fieldset>
+        <div class="w-100">
+            <f:form.textfield name="search[sword]" value="{sword}" class="form-control mr-sm-2" placeholder="{f:translate(key: 'form.submit')}" />
+            <f:form.button type="submit" name="search[submitButton]" value="buttonValue" class="btn btn-outline-light my-2 my-sm-0 d-none d-sm-inline"><i class="fas fa-search"></i></f:form.button>
+        </div>
     </f:form>
 </html>

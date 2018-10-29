@@ -20,6 +20,11 @@ plugin.tx_indexedsearch {
         displayRules = 0
         displayAdvancedSearchLink = 0
         displayLevel1Sections = 0
+
+        blind {
+            numberOfResults = 6
+        }
+
         defaultOptions {
             languageUid < config.sys_language_uid
         }

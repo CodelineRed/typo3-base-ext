@@ -1,0 +1,55 @@
+# Load default processing options
+imports:
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+
+# Add configuration for the editor
+# For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
+editor:
+  config:
+    contentsCss: "EXT:imhh_t3base/Resources/Public/Css/rte.css"
+    format_tags: "p;h2;h3;h4;h5"
+    #codeSnippet_theme: "monokai_sublime"
+    
+    stylesSet:
+      - { name: "BS Text Danger", element: "span", attributes: { class: "text-danger"} }
+      - { name: "BS Button Primary", element: "a", attributes: { class: "btn btn-primary"} }
+      - { name: "BS List", element: "ul", attributes: { class: "list-group"} }
+      - { name: "BS List Item", element: "li", attributes: { class: "list-group-item"} }
+      - { name: "BS List Item Dark", element: "li", attributes: { class: "list-group-item bg-dark"} }
+
+
+    toolbarGroups:
+      - { name: styles, groups: [ styles, format ] }
+      - { name: basicstyles, groups: [ basicstyles ] }
+      - { name: paragraph, groups: [ list, indent, blocks, align ] }
+      - { name: links, groups: [ links ] }
+      - { name: clipboard, groups: [ clipboard, cleanup, undo ] }
+      - { name: editing, groups: [ spellchecker ] }
+      - { name: insert, groups: [ insert ] }
+      - { name: tools, groups: [ table, specialchar ] }
+      - { name: document, groups: [ mode ] }
+      
+    coreStyles_bold: { element: "span", attributes: { class: "font-weight-bold" } }
+    coreStyles_italic: { element: "span", attributes: { class: "font-italic" } }
+
+    justifyClasses:
+      - text-left
+      - text-center
+      - text-right
+      - text-justify
+
+    extraPlugins:
+      - justify
+
+    removePlugins:
+      - image
+
+    removeButtons:
+      - Strike
+      - Anchor
+      - Outdent
+      - Indent
+      - Blockquote
+      - JustifyBlock

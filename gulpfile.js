@@ -119,6 +119,7 @@ gulp.task('svg', function() {
 gulp.task('cleanup', function() {
     del([
             publicPath + 'Css/**/*',
+            '!' + publicPath + 'Css/rte.css',
             publicPath + 'Js/**/*',
             publicPath + 'Img/**/*',
             publicPath + 'Font/**/*',

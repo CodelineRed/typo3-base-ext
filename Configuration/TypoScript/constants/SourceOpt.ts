@@ -1,0 +1,3 @@
+sourceopt {
+    formatHtml = 1
+}

@@ -1,7 +1,7 @@
 # override page title with news title
 [globalVar = GP:tx_news_pi1|news > 0]
-    lib.newstitle = RECORDS
-    lib.newsTitle {
+    lib.news_title = RECORDS
+    lib.news_title {
         source = {GP:tx_news_pi1|news}
         source.insertData = 1
         tables = tx_news_domain_model_news
@@ -12,7 +12,7 @@
     }
     page.config.noPageTitle = 2
     page.headerData.20 >
-    page.headerData.20 < lib.newstitle
+    page.headerData.20 < lib.news_title
 [global]
 
 plugin.tx_indexedsearch {
@@ -20,11 +20,6 @@ plugin.tx_indexedsearch {
         displayRules = 0
         displayAdvancedSearchLink = 0
         displayLevel1Sections = 0
-
-        blind {
-            numberOfResults = 6
-        }
-
         defaultOptions {
             languageUid < config.sys_language_uid
         }

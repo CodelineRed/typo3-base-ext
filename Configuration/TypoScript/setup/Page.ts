@@ -157,50 +157,8 @@ page {
         index_externals = 1
     }
 
-    shortcutIcon = favicon.ico
+    shortcutIcon = EXT:imhh_t3base/Resources/Public/Img/favicons/favicon.ico
 }
-
-
-// Ajax page in general
-ajaxpage = PAGE
-ajaxpage {
-    config {
-        disableAllHeaderCode = 1
-        additionalHeaders = Content-type:application/json
-        xhtml_cleaning = 0
-        admPanel = 0
-        debug = 0
-        no_cache = 0
-        cache = 1
-    }
-}
-
-
-// add canonical tag
-[globalVar = TSFE:id=4]
-    lib.canonical.10.typolink.parameter.data = TSFE:baseUrl
-[global]
-page.headerData.100 < lib.canonical
-
-
-# neu ab t3 4.7
-tt_content.stdWrap.innerWrap.cObject.default.20.10.noTrimWrap = || csc-default layout-{field:layout} frame-{field:section_frame}  |
-tt_content.stdWrap.innerWrap.cObject.default.20.10.insertData = 1
-
-#tt_content.stdWrap.prepend >
-
-
-// Enable lightbox with typoscript
-tt_content.image.20.1.imageLinkWrap {
-    JSwindow = 0
-    directImageLink = 1
-    linkParams.ATagParams {
-        dataWrap = class="fancybox" rel="fancybox{field:uid}"
-    }
-    height =
-    width =
-}
-
 
 # allow html-Tags in headers of content-elements
 lib.stdheader.10.setCurrent.htmlSpecialChars = 0
@@ -214,7 +172,6 @@ lib.stdheader.20.3.htmlSpecialChars = 0
 lib.stdheader.20.4.htmlSpecialChars = 0
 lib.stdheader.20.5.htmlSpecialChars = 0
 lib.stdheader.20.default.htmlSpecialChars = 0
-
 
 # remove comments
 # http://t3n.de/magazin/23-tipps-tricks-schnelleres-typo3-typo3-turbo-edition-225282/3/

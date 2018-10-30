@@ -32,6 +32,9 @@ plugin.tx_imhh_t3base {
         # cat=plugin.tx_imhh_t3base/general/07; type=string; label=PID of news detail page
         news_detail = 
 
+        # cat=plugin.tx_imhh_t3base/general/07; type=string; label=PID of root page
+        root = 
+
         # cat=plugin.tx_imhh_t3base/general/08; type=string; label=PID of main navigation
         main_navigation = 
 

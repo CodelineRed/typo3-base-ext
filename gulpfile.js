@@ -49,6 +49,7 @@ gulp.task('js', function() {
             'node_modules/cssuseragent/cssua.js',
             'node_modules/vanilla-lazyload/dist/lazyload.js',
             'node_modules/cookieconsent/src/cookieconsent.js',
+            'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
             sourcePath + 'Js/plugin/**/*.js',
             sourcePath + 'Js/module/**/*.js',
             sourcePath + 'Js/scripts.js'

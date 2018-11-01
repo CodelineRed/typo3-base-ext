@@ -4,8 +4,12 @@
 (function($) {
     $(document).ready(function() {
         $('html').removeClass('no-js');
-        $('[data-toggle="tooltip"]').tooltip();
-        $('.image-embed-item').addClass('img-fluid');
+        $('main table').wrap('<div class="table-responsive"></div>');
+        
+        $('main [title]').tooltip({
+            placement: 'bottom'
+        });
+        
         $('.navbar-brand').click(function(e) {
             e.preventDefault();
         });

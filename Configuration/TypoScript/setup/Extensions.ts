@@ -20,10 +20,22 @@ plugin.tx_indexedsearch {
         displayRules = 0
         displayAdvancedSearchLink = 0
         displayLevel1Sections = 0
+
+        blind {
+            numberOfResults = 6
+        }
+
         defaultOptions {
             languageUid < config.sys_language_uid
         }
     }
 }
 
+lib.parseFunc_RTE.externalBlocks.table.stdWrap.HTMLparser.tags.table.fixAttrib.class {
+    default = table table-striped table-dark
+    list = table table-striped table-dark
+}
 
+lib.contentElement.settings.media.popup.linkParams.ATagParams {
+    dataWrap = data-fancybox="gallery" class="{$styles.content.textmedia.linkWrap.lightboxCssClass}" rel="{$styles.content.textmedia.linkWrap.lightboxRelAttribute}"
+}

@@ -33,75 +33,9 @@ config {
     sys_language_overlay = hideNonTranslated
 
     spamProtectEmailAddresses = 2
-    spamProtectEmailAddresses_atSubst = (at)
+    spamProtectEmailAddresses_atSubst = [at]
+    spamProtectEmailAddresses_lastDotSubst = [dot]
 
     # enable debug
     #contentObjectExceptionHandler = 0
 }
-
-[globalVar = GP:L = 1]
-    config {
-        sys_language_uid = 1
-    }
-[global]
-
-[globalVar = GP:L = 2]
-    config {
-        sys_language_uid = 2
-    }
-[global]
-
-[globalVar = GP:L = 3]
-    config {
-        sys_language_uid = 3
-    }
-[global]
-
-[globalVar = GP:L = 4]
-    config {
-        sys_language_uid = 4
-    }
-[global]
-
-[globalVar = GP:L = 4]
-    config {
-        sys_language_uid = 4
-    }
-[global]
-
-[globalVar = GP:L = 5]
-    config {
-        sys_language_uid = 5
-    }
-[global]
-
-[globalVar = GP:L = 6]
-    config {
-        sys_language_uid = 6
-    }
-[global]
-
-[globalVar = GP:L = 7]
-    config {
-        sys_language_uid = 7
-    }
-[global]
-
-[globalVar = GP:L = 8]
-    config {
-        sys_language_uid = 8
-    }
-[global]
-
-[globalVar = GP:L = 9]
-    config {
-        sys_language_uid = 9
-    }
-[global]
-
-[globalVar = GP:L = 10]
-    config {
-        sys_language_uid = 10
-    }
-[global]
-

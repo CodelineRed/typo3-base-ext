@@ -31,6 +31,12 @@ plugin.tx_indexedsearch {
     }
 }
 
+plugin.tx_news {
+    settings {
+        displayDummyIfNoMedia = 0
+    }
+}
+
 lib.parseFunc_RTE.externalBlocks.table.stdWrap.HTMLparser.tags.table.fixAttrib.class {
     default = table table-striped table-dark
     list = table table-striped table-dark

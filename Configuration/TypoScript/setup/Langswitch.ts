@@ -20,6 +20,12 @@ lib.langswitch {
             stdWrap.cObject {
                 value =  {$plugin.tx_imhh_t3base.settings.langswitch_label}
             }
+            additionalParams.cObject = TEXT
+            additionalParams.cObject {
+                data = GP:tx_news_pi1|news
+                stdWrap.wrap = &tx_news_pi1[news]=|
+                stdWrap.required = 1
+            }
             ATagParams = class="dropdown-item first" |*| class="dropdown-item" |*| class="dropdown-item last"
             allWrap = |
         }

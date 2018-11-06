@@ -3,5 +3,6 @@
 # ======================================================================
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:imhh_t3base/Configuration/TypoScript/constants/ImhhT3base.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:imhh_t3base/Configuration/TypoScript/constants/IndexedSearch.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:imhh_t3base/Configuration/TypoScript/constants/News.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:imhh_t3base/Configuration/TypoScript/constants/SourceOpt.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:imhh_t3base/Configuration/TypoScript/constants/Styles.ts">

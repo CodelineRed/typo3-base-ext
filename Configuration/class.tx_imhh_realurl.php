@@ -51,7 +51,7 @@ class tx_imhh_realurl {
                         ),
                     ),
                  ),
-//                 1 => 'article', # key = page id - value = name of fixedPostVars
+                 21 => 'article', # key = page id - value = name of fixedPostVars
             ),
             'preVars' => array(
                 array(

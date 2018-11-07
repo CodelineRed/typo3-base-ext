@@ -152,6 +152,76 @@ page {
     headerData.35 < page.headerData.30
     headerData.35.wrap = <meta property="og:image" content="|" />
 
+    headerData.40 = COA
+    headerData.40 {
+        wrap = <script>var cookieLayer = {|};</script>
+
+        1 = TEXT
+        1 {
+            data = LLL:EXT:imhh_t3base/Resources/Private/Language/locallang.xlf:cookie_layer.header
+            stdWrap.wrap = header: '|',
+        }
+
+        2 = TEXT
+        2 {
+            data = LLL:EXT:imhh_t3base/Resources/Private/Language/locallang.xlf:cookie_layer.message
+            stdWrap.wrap = message: '|',
+        }
+
+        3 = TEXT
+        3 {
+            data = LLL:EXT:imhh_t3base/Resources/Private/Language/locallang.xlf:cookie_layer.allow
+            stdWrap.wrap = allow: '|',
+        }
+
+        4 = TEXT
+        4 {
+            data = LLL:EXT:imhh_t3base/Resources/Private/Language/locallang.xlf:cookie_layer.dismiss
+            stdWrap.wrap = dismiss: '|',
+        }
+
+        5 = TEXT
+        5 {
+            data = LLL:EXT:imhh_t3base/Resources/Private/Language/locallang.xlf:cookie_layer.deny
+            stdWrap.wrap = deny: '|',
+        }
+
+        6 = TEXT
+        6 {
+            data = LLL:EXT:imhh_t3base/Resources/Private/Language/locallang.xlf:cookie_layer.link
+            stdWrap.wrap = link: '|',
+        }
+
+        7 = TEXT
+        7 {
+            data = LLL:EXT:imhh_t3base/Resources/Private/Language/locallang.xlf:cookie_layer.message_link
+            stdWrap.wrap = messageLink: '|',
+        }
+
+        8 = TEXT
+        8 {
+            data = LLL:EXT:imhh_t3base/Resources/Private/Language/locallang.xlf:cookie_layer.dismiss_link
+            stdWrap.wrap = dismissLink: '|',
+        }
+
+        9 = TEXT
+        9 {
+            data = LLL:EXT:imhh_t3base/Resources/Private/Language/locallang.xlf:cookie_layer.allow_link
+            stdWrap.wrap = allowLink: '|',
+        }
+
+        10 = TEXT
+        10 {
+            data = LLL:EXT:imhh_t3base/Resources/Private/Language/locallang.xlf:cookie_layer.policy
+            stdWrap.wrap = policy: '|',
+        }
+
+        11 = TEXT
+        11 {
+            value = href: '{$plugin.tx_imhh_t3base.settings.cookie_layer_href}',
+        }
+    }
+
     config{
         index_enable = 1
         index_externals = 1

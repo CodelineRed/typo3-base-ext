@@ -3,3 +3,9 @@ loginStyle = 1
 
 # cat=basic/enable; type=boolean; label=Backend style:Enable or disable custom backend style.
 backendStyle = 1
+
+# cat=basic/enable; type=string; label=List of News detail PIDs (Example 3,56,23):Remove typo3conf/realurl_autoconf.php after you change this field.
+newsDetailList = 
+
+# cat=basic/enable; type=string; label=List of languages (uid#url, first in list is default value) (Example 0#en,1#de):Remove typo3conf/realurl_autoconf.php after you change this field.
+languageList = 

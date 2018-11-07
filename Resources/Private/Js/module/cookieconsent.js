@@ -13,7 +13,9 @@
                     + '<div class="container"><div class="row align-items-center">{{children}}</div></div></div>',
             elements: {
                 messagelink: '<div class="col-12 col-sm-6 col-lg-8 pb-3 pb-sm-0"><span id="cookieconsent:desc" class="cc-message">{{message}} ' 
-                        + '<a aria-label="learn more about cookies" tabindex="0" class="cc-link" href="{{href}}" target="_blank">{{link}}</a></span></div>'
+                        + '<a aria-label="' + cookieLayer.messageLink + '" tabindex="0" class="cc-link" href="{{href}}" target="_blank">{{link}}</a></span></div>',
+                dismiss: '<a aria-label="' + cookieLayer.dismissLink + '" tabindex="0" class="cc-btn cc-dismiss">{{dismiss}}</a>',
+                allow: '<a aria-label="' + cookieLayer.allowLink + '" tabindex="0" class="cc-btn cc-allow">{{allow}}</i></a>'
             },
             compliance: {
                 info: '<div class="cc-compliance col-12 col-sm-6 col-lg-4">{{dismiss}}</div>',
@@ -33,11 +35,14 @@
             theme: 'classic',
             type: 'info',
             content: {
-                message: 'This website uses cookies to ensure you get the best experience on our website.',
-                dismiss: 'Got it!',
-                deny: 'Deny',
-                link: 'Learn more',
-                href: '#privacypolicy'
+                header: cookieLayer.header,
+                message: cookieLayer.message,
+                dismiss: cookieLayer.dismiss,
+                allow: cookieLayer.allow,
+                deny: cookieLayer.deny,
+                link: cookieLayer.link,
+                policy: cookieLayer.policy,
+                href: cookieLayer.href
             },
             onInitialise: function(status) {
                 var type = this.options.type;

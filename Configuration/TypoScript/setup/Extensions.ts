@@ -34,6 +34,14 @@ plugin.tx_indexedsearch {
 plugin.tx_news {
     settings {
         displayDummyIfNoMedia = 0
+        list {
+            media {
+                image {
+                    maxWidth = 550
+                    maxHeight = 140
+                }
+            }
+        }
     }
 }
 

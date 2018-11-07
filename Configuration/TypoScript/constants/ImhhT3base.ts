@@ -45,10 +45,13 @@ plugin.tx_imhh_t3base {
         breadcrumb_navigation = 0|-1
 
         # cat=plugin.tx_imhh_t3base/general/11; type=string; label=IDs of active translations
-        langswitch_navigation = 0,1
+        langswitch_navigation = 
 
         # cat=plugin.tx_imhh_t3base/general/10; type=string; label=Langswitch labels
-        langswitch_label = English || Deutsch
+        langswitch_label = 
+
+        # cat=plugin.tx_imhh_t3base/general/20; type=string; label=Cookie layer "Learn more" link
+        cookie_layer_href = #policy
 
         # cat=plugin.tx_imhh_t3base/general/30; type=string; label=Facebook image
         facebook_img = 

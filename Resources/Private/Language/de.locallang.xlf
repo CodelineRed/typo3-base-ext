@@ -1,82 +1,107 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2018-10-22T18:00:00Z" product-name="imhh_t3base">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2018-10-22T18:00:00Z" product-name="imhh_t3base">
         <header/>
         <body>
             <trans-unit id="bl.01" xml:space="preserve">
                 <source>Content</source>
+                <target>Inhalt</target>
             </trans-unit>
             <trans-unit id="bl.02" xml:space="preserve">
                 <source>Head with Content left and Sidebar right</source>
+                <target>Kopfteil mit Inhalt links und Sidebar rechts</target>
             </trans-unit>
             <trans-unit id="bl.03" xml:space="preserve">
                 <source>Head with Sidebar left and Content right</source>
+                <target>Kopfteil mit Sidebar links und Inhalt rechts</target>
             </trans-unit>
             <trans-unit id="bl.04" xml:space="preserve">
                 <source>Content left and Sidebar right</source>
+                <target>Inhalt links und Sidebar rechts</target>
             </trans-unit>
             <trans-unit id="bl.05" xml:space="preserve">
                 <source>Sidebar left and Content right</source>
+                <target>Sidebar links und Inhalt rechts</target>
             </trans-unit>
             <trans-unit id="bl.06" xml:space="preserve">
                 <source>Head with Content</source>
+                <target>Kopfteil mit Inhalt</target>
             </trans-unit>
             <trans-unit id="bl.07" xml:space="preserve">
                 <source>Homepage</source>
+                <target>Startseite</target>
             </trans-unit>
             <trans-unit id="bl.content" xml:space="preserve">
                 <source>Content</source>
+                <target>Inhalt</target>
             </trans-unit>
             <trans-unit id="bl.content_left" xml:space="preserve">
                 <source>Content (left)</source>
+                <target>Inhalt (links)</target>
             </trans-unit>
             <trans-unit id="bl.content_right" xml:space="preserve">
                 <source>Content (right)</source>
+                <target>Inhalt (rechts)</target>
             </trans-unit>
             <trans-unit id="bl.sidebar" xml:space="preserve">
                 <source>Sidebar</source>
+                <target>Sidebar</target>
             </trans-unit>
             <trans-unit id="bl.sidebar_left" xml:space="preserve">
                 <source>Sidebar (left)</source>
+                <target>Sidebar (links)</target>
             </trans-unit>
             <trans-unit id="bl.sidebar_right" xml:space="preserve">
                 <source>Sidebar (right)</source>
+                <target>Sidebar (rechts)</target>
             </trans-unit>
             <trans-unit id="bl.head" xml:space="preserve">
                 <source>Head</source>
+                <target>Kopfteil</target>
             </trans-unit>
             <trans-unit id="bl.head_top" xml:space="preserve">
                 <source>Head (top)</source>
+                <target>Kopfteil (oben)</target>
             </trans-unit>
             <trans-unit id="cookie_layer.message_link" xml:space="preserve">
                 <source>Learn more about cookies</source>
+                <target>Erfahren Sie mehr über Cookies</target>
             </trans-unit>
             <trans-unit id="cookie_layer.dismiss_link" xml:space="preserve">
                 <source>Dismiss cookie message</source>
+                <target>Cookie-Nachricht ablehnen</target>
             </trans-unit>
             <trans-unit id="cookie_layer.allow_link" xml:space="preserve">
                 <source>Allow cookies</source>
+                <target>Cookies zulassen</target>
             </trans-unit>
             <trans-unit id="cookie_layer.header" xml:space="preserve">
                 <source>Cookies used on the website!</source>
+                <target>Cookies auf der Website verwendet!</target>
             </trans-unit>
             <trans-unit id="cookie_layer.message" xml:space="preserve">
                 <source>This website uses cookies to ensure you get the best experience on our website.</source>
+                <target>Diese Website verwendet Cookies, um sicherzustellen, dass Sie die beste Erfahrung auf unserer Website erhalten.</target>
             </trans-unit>
             <trans-unit id="cookie_layer.dismiss" xml:space="preserve">
                 <source>Got it!</source>
+                <target>Verstanden!</target>
             </trans-unit>
             <trans-unit id="cookie_layer.allow" xml:space="preserve">
                 <source>Allow cookies</source>
+                <target>Cookies zulassen</target>
             </trans-unit>
             <trans-unit id="cookie_layer.deny" xml:space="preserve">
                 <source>Decline</source>
+                <target>Verweigern</target>
             </trans-unit>
             <trans-unit id="cookie_layer.link" xml:space="preserve">
                 <source>Learn more</source>
+                <target>Mehr erfahren</target>
             </trans-unit>
             <trans-unit id="cookie_layer.policy" xml:space="preserve">
                 <source>Cookie Policy</source>
+                <target>Cookie-Richtlinie</target>
             </trans-unit>
         </body>
     </file>

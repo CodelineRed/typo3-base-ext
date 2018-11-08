@@ -7,6 +7,11 @@ imports:
 # Add configuration for the editor
 # For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
 editor:
+  externalPlugins:
+    ckawesome:
+      resource: "EXT:imhh_t3base/Resources/Public/CkEditor/ckawesome/plugin.js"
+      #route: "rteckeditor_wizard_browse_links"
+      
   config:
     contentsCss: "EXT:imhh_t3base/Resources/Public/Css/rte.css"
     format_tags: "p;h2;h3;h4;h5"

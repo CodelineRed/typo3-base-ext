@@ -18,9 +18,13 @@ class tx_imhh_realurl {
             
             if (isset($configuration['newsDetailList'])) {
                 $configuration['newsDetailList'] = explode(',', $configuration['newsDetailList']);
-                $configuration['languageList'] = explode(',', $configuration['languageList']);
             } else {
                 $configuration['newsDetailList'] = [];
+            }
+            
+            if (isset($configuration['languageList'])) {
+                $configuration['languageList'] = explode(',', $configuration['languageList']);
+            } else {
                 $configuration['languageList'] = [];
             }
         } else {

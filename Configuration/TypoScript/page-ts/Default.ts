@@ -25,11 +25,11 @@ TCEFORM {
         }
 
         space_before_class {
-            removeItems = extra-small,small,medium,large,extra-large
+            #removeItems = extra-small,small,medium,large,extra-large
         }
 
         space_after_class {
-            removeItems = extra-small,small,medium,large,extra-large
+            #removeItems = extra-small,small,medium,large,extra-large
         }
     }
 
